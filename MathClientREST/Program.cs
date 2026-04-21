@@ -15,16 +15,16 @@ try
 
     // Ejecución de operaciones mediante peticiones GET
     var suma = await client.GetStringAsync($"sumar?a={n1}&b={n2}");
-    Console.WriteLine($"{n1} + {n2} = {suma}"); // [cite: 145]
+    Console.WriteLine($"{n1} + {n2} = {suma}"); 
 
     var resta = await client.GetStringAsync($"restar?a={n1}&b={n2}");
-    Console.WriteLine($"{n1} - {n2} = {resta}"); // [cite: 148]
+    Console.WriteLine($"{n1} - {n2} = {resta}");
 
     var mult = await client.GetStringAsync($"multiplicar?a={n1}&b={n2}");
-    Console.WriteLine($"{n1} * {n2} = {mult}"); // [cite: 147]
+    Console.WriteLine($"{n1} * {n2} = {mult}"); 
 
     var div = await client.GetStringAsync($"dividir?a={n1}&b={n2}");
-    Console.WriteLine($"{n1} / {n2} = {div}"); // [cite: 146]
+    Console.WriteLine($"{n1} / {n2} = {div}"); 
 }
 catch (Exception ex)
 {
